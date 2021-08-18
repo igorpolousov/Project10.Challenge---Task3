@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  Project10.Challenge - Task3
-//
+//  Day 44
 //  Created by Igor Polousov on 12.08.2021.
 //
 
@@ -37,6 +37,15 @@ class ViewController: UICollectionViewController {
         
         cell.imageView.image = UIImage(named: picture)
         cell.name.text = picture.replacingOccurrences(of: ".jpg", with: "")
+        
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor(white: 0.4, alpha: 0.3).cgColor
+        cell.layer.cornerRadius = 6
+        cell.layer.backgroundColor = UIColor(white: 0.6, alpha: 0.2).cgColor
+        
+        cell.imageView.layer.borderWidth = 1
+        cell.imageView.layer.borderColor = UIColor(white: 0.4, alpha: 0.3).cgColor
+        cell.imageView.layer.cornerRadius = 6
        
         
         return cell
